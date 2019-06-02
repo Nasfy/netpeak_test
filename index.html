@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form action="data.php" method="get" class="form">
+    <table>
+      <tr>
+        <td>Ширина изображения</td>
+        <td><input required class="length" type="text" name="length_img"></td>
+      </tr>
+      <tr>
+        <td>Высота изображения</td>
+        <td><input required class="height" type="text" name="height_img"></td>
+      </tr>
+      <tr>
+        <td>Радиус окружности</td>
+        <td><input required class="radCircle" type="text" name="rad_circle"></td>
+      </tr>
+      <tr>
+        <td>Число окружностей</td>
+        <td><select required class="amt" name="amt_circle">
+          <option></option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><input class="validate" type="submit" value="Сгенерировать изображение"></td>
+      </tr>
+    </table>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
